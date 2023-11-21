@@ -9,4 +9,6 @@ RUN git config --global oh-my-zsh.hide-dirty 1
 RUN pip install dbt-snowflake
 RUN pip install sqlfluff sqlfluff-templater-dbt
 
+EXPOSE 8080
+
 WORKDIR /dbt/

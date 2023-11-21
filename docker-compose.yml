@@ -8,3 +8,5 @@ services:
     entrypoint: /bin/zsh
     environment:
       - DBT_PROFILES_DIR=/dbt
+    ports:
+      - "8080:8080"

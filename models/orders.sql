@@ -45,6 +45,8 @@ final as (
 
         order_payments.total_amount as amount
 
+        , TO_TIMESTAMP_NTZ(CURRENT_TIMESTAMP) as updated_at
+
     from orders
 
 
