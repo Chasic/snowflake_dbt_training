@@ -1,0 +1,14 @@
+config:
+send_anonymous_usage_stats: False
+
+snowflake_test:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account:
+      user:
+      role:
+      password:
+      database:
+      schema:

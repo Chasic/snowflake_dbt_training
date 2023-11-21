@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  dbt:
+    build: .
+    volumes:
+      - ./:/dbt:consistent
+    entrypoint: /bin/zsh
+    environment:
+      - DBT_PROFILES_DIR=/dbt
